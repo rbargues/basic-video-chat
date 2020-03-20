@@ -1,0 +1,21 @@
+<html>
+  <head>
+    <meta charset = "UTF-8">
+    <title>Video Chat</title>
+    <style>
+      video {
+        border-style: solid;
+      }
+    </style>
+  </head>
+  <body>
+    <div id = "root">
+      <video id="my-camera"  width="300" height="300" autoplay="autoplay" muted = "true"></video>
+      <video id="other-camera"  width="300" height="300" autoplay="autoplay" muted = "true"></video>
+
+    </div>
+  </body>
+  <script src = "https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/peerjs@0.3.20/dist/peer.min.js"></script>
+  <script src="./getvid.js"></script>
+</html>
